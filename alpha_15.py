@@ -18,7 +18,7 @@ def main():
 
 
 def generate_lcg(num_iterations, key, serial_number, batch_number):
-	"""LCG RANDU- generates as many random numbers as requested by user, using a Linear Congruential Generator LCG uses the formula: X_(i+1) = (aX_i + c) mod m. This LCG uses the RANDU initial setting, a=65539; c=0; m=2^31.
+	"""LEG RANDU- generates as many random numbers as requested by user, using a Linear Congruential Generator LCG uses the formula: X_(i+1) = (aX_i + c) mod m. This LCG uses the RANDU initial setting, a=65539; c=0; m=2^31.
 	:param num_iterations: int - the number of random numbers requested
 	:return: void
    """
