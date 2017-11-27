@@ -22,10 +22,12 @@ def authenticate_lcg(alpha_numbers, key, serial_number, batch_number):
 		print 'unauthentic'
 		return 0
 	else:
-		final = str(hashidEncoded)[1:16]
+		final=str(hashidEncoded).strip('(L,)')
 		if len(final) != 15:
 			print 'unauthentic'
 			return 0
+		# final = str(hashidEncoded)[1:16]
+
 		if int(serial_number) <= 9:
 			final = final[14:] + final[:14]
 			print final
